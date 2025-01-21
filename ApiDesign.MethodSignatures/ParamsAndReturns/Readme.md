@@ -79,7 +79,7 @@ public IEnumerable<T> SpecialFilter(IEnumerable<T> source)
 {
 	foreach(var e in source)
 	{
-	    if(MeetsCriteria(e))
+		if(MeetsCriteria(e))
 		{
 			yield return e;
 		}
