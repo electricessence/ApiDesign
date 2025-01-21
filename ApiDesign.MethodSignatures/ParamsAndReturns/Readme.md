@@ -31,6 +31,8 @@ and returns a single item from the collection
 and will throw if not found.
 Similar to LINQ's `.First()` extension.
 
+---
+
 ### Collections
 
 But when dealing with collections,
@@ -55,6 +57,8 @@ This results in not having to recast the result
 if the caller has a direct reference to the `Finder<T>` class
 and it functionally satisfies the interface.
 
+---
+
 #### PagedResult Examples
 
 In the `PagedResult<T>` examples,
@@ -69,6 +73,8 @@ but we don't start seeing the benefits until we use more specific types.
 It then becomes easy to define either a mutable or immutable page types.
 
 In cases like this, it should be obvious that the return type should be as specific as possible.
+
+---
 
 #### Creating Enumerables
 
