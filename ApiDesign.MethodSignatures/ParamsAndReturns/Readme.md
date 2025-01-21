@@ -26,7 +26,7 @@ See the files contained in this folder for more detailed examples.
 ### Simple or Value Types
 
 General guidance here is to just use the type directly.
-See `FindExtensions.cs` for exact examples.
+See `IFind.cs => FindExtensions` for exact examples.
 
 The implementation of the `FindFirst<T>` extension is simple
 and returns a single item from the collection
