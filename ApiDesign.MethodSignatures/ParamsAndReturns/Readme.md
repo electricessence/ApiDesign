@@ -59,24 +59,7 @@ and it functionally satisfies the interface.
 
 ---
 
-#### PagedResult Examples
-
-In the `PagedResult<T>` examples,
-it is clear that a collection type (not `IEnumerable<T>`) will be necessary
-as the caller will need the count of items.
-
-In order to setup the class inheritance, we start with a constraint of `IEnumerable<T>`,
-but we don't start seeing the benefits until we use more specific types.
-
-`PagedResult<T, TPage>` is highly flexible and is essentially the base class for all paged results.
-
-It then becomes easy to define either a mutable or immutable page types.
-
-In cases like this, it should be obvious that the return type should be as specific as possible.
-
----
-
-#### Creating Enumerables
+### Creating Enumerables
 
 Whenever possible, use the `yield` keyword to create enumerables instead of building a list.
 
@@ -99,3 +82,21 @@ Using the `yield` keyword is one of the easiest ways to keep your code simple an
 2. It avoids unnecessary allocations.
 3. Allows the caller to decide how they want to materialize the results.
 4. Highly complex filtering can be done without creating a new collection.
+
+---
+
+### PagedResult Examples
+
+In the `PagedResult<T>` examples,
+it is clear that a collection type (not `IEnumerable<T>`) will be necessary
+as the caller will need the count of items.
+
+In order to setup the class inheritance, we start with a constraint of `IEnumerable<T>`,
+but we don't start seeing the benefits until we use more specific types.
+
+`PagedResult<T, TPage>` is highly flexible and is essentially the base class for all paged results.
+
+It then becomes easy to define either a mutable or immutable page types.
+
+In cases like this, it should be obvious that the return type should be as specific as possible.
+
