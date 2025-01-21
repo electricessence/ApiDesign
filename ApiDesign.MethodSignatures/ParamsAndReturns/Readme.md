@@ -21,6 +21,8 @@ If there are performance reasons to specialize the parameter, then overloads can
 This is where things get a bit tricky and it's best to show more than tell.
 See the files contained in this folder for more detailed examples.
 
+---
+
 ### Simple or Value Types
 
 General guidance here is to just use the type directly.
